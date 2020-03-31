@@ -2,19 +2,19 @@ import axios from 'axios'
 
 class SonyDataService {
 
-    retrieveAllNikonParts() {
+    retrieveAllSonyParts() {
         return axios.get(`http://localhost:8080/getAllSonyParts`)
     }
 
-    deleteNikonPart(id) {
+    deleteSonyPart(id) {
         return axios.delete(`http://localhost:8080/deleteSonyPart/${id}`)
     }
 
-    updateNikonPart(part) {
+    updateSonyPart(part) {
         return axios.put(`http://localhost:8080/updateSonyPart/`, part)
     }
 
-    addNikonPart(part) {
+    addSonyPart(part) {
         return axios.post(`http://localhost:8080/sonyAddNewPart/`, part)
     }
 
