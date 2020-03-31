@@ -78,7 +78,7 @@ class SonyComponent extends Component {
                                     <td>{parts.partName}</td>
                                     <td>{parts.partNumber}</td>
                                     <td>{parts.partPrice}</td>
-                                    <td><button className="btn btn-success" onClick={() => this.updatePartsClicked(parts.id, parts.partName, parts.partNumber, parts.partPrice)}>Update</button></td>
+                                    <td><button className="btn btn-success" onClick={() => this.updatePartClicked(parts.id, parts.partName, parts.partNumber, parts.partPrice)}>Update</button></td>
                                     <td><button className="btn btn-warning" onClick={() => this.deletePartClicked(parts.id)}>Delete</button></td>
                                 </tr>
                             )

@@ -10,6 +10,7 @@ import CanonComponent from '../Canon/CanonComponent';
 import CanonUpdateComponent from '../Canon/CanonUpdateComponent';
 import CanonAddComponent from '../Canon/CanonAddComponent';
 import SonyComponent from '../Sony/SonyComponent';
+import SonyUpdateComponent from '../Sony/SonyUpdateComponent';
 
 class RouterComponent extends Component {
     render() {
@@ -28,6 +29,8 @@ class RouterComponent extends Component {
                     <Route path="/canonUpdatePart/:id?/:partName?/:partNumber?/:partPrice" exact component={CanonUpdateComponent} />
                     <Route path="/canonAddPart" exact component={CanonAddComponent} />
                     <Route path="/sony" exact component={SonyComponent} />
+                    <Route path="/sonyUpdatePart/:id?/:partName?/:partNumber?/:partPrice" exact component={SonyUpdateComponent} />
+                    
                 </Switch>
                 </>
             </ Router>
