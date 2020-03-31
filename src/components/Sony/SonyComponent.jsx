@@ -34,9 +34,9 @@ class SonyComponent extends Component {
         SonyDataService.deleteSonyPart(id)
         .then(
             response => {
-                this.setState({message: `Part Deleted with ID: ${id}`})
-                this.refereshPartsRegistery();
-                alert(this.state.message)
+                this.setState({
+                    parts: response.data,
+                })
             }
         )
     }
