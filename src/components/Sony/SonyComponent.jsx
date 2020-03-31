@@ -56,7 +56,7 @@ class SonyComponent extends Component {
             <div className="container-xl">
                     <br/><h2 style={{textAlign: "center", fontSize: 50}}>Sony Parts Invenotry</h2><br/>
                     <div className="container p-3 my-3 bg-dark" style={{backgroundColor: "gray"}}>
-                    <button type="button" className="btn btn-secondary pull-right btn-block" style={{fontSize: 30}} onClick={() => this.addPartsClicked()}>Add New Part</button>   
+                    <button type="button" className="btn btn-secondary pull-right btn-block" style={{fontSize: 30}} onClick={() => this.addPartClicked()}>Add New Part</button>   
                 </div>             
                 <table className="table table-dark table-hover" style={{textAlign: "center"}}>
                     <thead>
